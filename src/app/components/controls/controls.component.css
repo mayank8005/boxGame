@@ -1,0 +1,22 @@
+
+.remaining-height-except-play-area {
+    --play-area-height: 500px;  
+    height: calc(100vh - var(--play-area-height));
+}
+
+.controls {
+    background-color: #3a32a8;
+    color: white;
+    font-weight: bold;
+}
+
+.control-button {
+    padding: 10px;
+    color: white;
+    background-color: #5532a8;
+    margin: 0;
+    width: 100vw;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+}

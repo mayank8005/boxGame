@@ -1,0 +1,9 @@
+.box {
+    position: absolute;
+    display: inline-block;
+    background-color: #a83257;
+}
+
+.selected {
+    border: solid 5px yellow;
+}

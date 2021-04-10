@@ -1,0 +1,5 @@
+<div class="play-area" [ngStyle]="{height: playAreaHeight + 'px'}">
+    <ng-container *ngFor="let box of boxes">
+        <app-box [boxData]="box" (boxClicked)="boxClickHandler($event)"></app-box>
+    </ng-container>
+</div>

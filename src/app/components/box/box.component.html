@@ -1,0 +1,8 @@
+<div
+  class="box selected"
+  [ngClass]="{ selected: boxData.selected }"
+  (click)="boxClickHandler()"
+  [ngStyle]="{ top: boxData.y + 'px', left: boxData.x + 'px', height: boxDimensions + 'px', width: boxDimensions+ 'px'}"
+>
+  box {{ boxData.y }}
+</div>
