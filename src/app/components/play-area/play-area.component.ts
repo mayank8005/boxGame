@@ -10,8 +10,8 @@ import { PLAY_AREA_HEIGHT } from './play-area.constants';
 })
 export class PlayAreaComponent implements OnInit {
 
-  @Input('boxes') public boxes: Box[];
-  @Output('boxClicked') boxClicked: EventEmitter<number> = new EventEmitter<number>();
+  @Input() public boxes: Box[];
+  @Output() boxClicked: EventEmitter<number> = new EventEmitter<number>();
 
   public playAreaHeight = PLAY_AREA_HEIGHT;
 

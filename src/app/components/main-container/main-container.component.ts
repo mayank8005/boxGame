@@ -22,12 +22,12 @@ export class MainContainerComponent implements OnInit {
   }
 
   @HostListener('window:resize')
-  onResize() {
+  onResize(): void {
     this.innerWidth = window.innerWidth;
   }
 
   @HostListener('document:keydown', ['$event'])
-  onKeydownHandler(event: KeyboardEvent) {
+  onKeydownHandler(event: KeyboardEvent): void {
     const {key} = event;
     if (UP.includes(key)) { this.moveUp(); }
     else if (DOWN.includes(key)) { this.moveDown(); }

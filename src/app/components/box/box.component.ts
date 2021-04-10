@@ -9,8 +9,8 @@ import { BOX_DIMENSION } from './box.constants';
 })
 export class BoxComponent implements OnInit {
 
-  @Input('boxData') boxData: Box;
-  @Output('boxClicked') boxClicked: EventEmitter<number> = new EventEmitter<number>();
+  @Input() boxData: Box;
+  @Output() boxClicked: EventEmitter<number> = new EventEmitter<number>();
 
   public boxDimensions = BOX_DIMENSION;
 

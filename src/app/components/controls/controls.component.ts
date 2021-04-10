@@ -9,7 +9,7 @@ import { LABELS } from './controls.constants';
 })
 export class ControlsComponent implements OnInit {
 
-  @Output('addBoxClicked') addBoxClicked: EventEmitter<void> = new EventEmitter<void>();
+  @Output() addBoxClicked: EventEmitter<void> = new EventEmitter<void>();
 
   public LABELS = LABELS;
 
