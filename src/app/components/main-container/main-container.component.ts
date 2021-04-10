@@ -29,7 +29,6 @@ export class MainContainerComponent implements OnInit {
   @HostListener('document:keydown', ['$event'])
   onKeydownHandler(event: KeyboardEvent) {
     const {key} = event;
-    console.log(key);
     if (UP.includes(key)) { this.moveUp(); }
     else if (DOWN.includes(key)) { this.moveDown(); }
     else if (LEFT.includes(key)) { this.moveLeft(); }
@@ -52,7 +51,7 @@ export class MainContainerComponent implements OnInit {
   }
 
   removeSelectedBox(): void {
-    this.boxes.filter(box => !box.selected);
+    this.boxes = this.boxes.filter(box => !box.selected);
   }
 
   moveDown(): void {
@@ -91,8 +90,6 @@ export class MainContainerComponent implements OnInit {
     if (cordWithDimension > range) { return range - BOX_DIMENSION; }
     return cord;
   }
-
-
 
   removeSelection(): void {
     this.boxes = this.boxes.map(box => ({...box, selected: false}));
