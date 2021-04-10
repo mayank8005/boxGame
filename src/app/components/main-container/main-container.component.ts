@@ -84,6 +84,7 @@ export class MainContainerComponent implements OnInit {
     }));
   }
 
+  // This function will check if given cordinates are within limit and return cordinates after sanity check
   checkAndGetNewCords(cord: number, range: number): number {
     const cordWithDimension = cord + BOX_DIMENSION;
     if (cord < 0) { return 0; }
