@@ -2,6 +2,7 @@
     position: absolute;
     display: inline-block;
     background-color: #a83257;
+    color: white;
 }
 
 .selected {

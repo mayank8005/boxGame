@@ -2,7 +2,14 @@
   class="box selected"
   [ngClass]="{ selected: boxData.selected }"
   (click)="boxClickHandler()"
-  [ngStyle]="{ top: boxData.y + 'px', left: boxData.x + 'px', height: boxDimensions + 'px', width: boxDimensions+ 'px'}"
+  [ngStyle]="{
+    top: boxData.y + 'px',
+    left: boxData.x + 'px',
+    height: boxDimensions + 'px',
+    width: boxDimensions + 'px',
+    'z-index': boxData.id
+  }"
 >
-  box {{ boxData.y }}
+  Cords: {{ boxData.x }}, {{ boxData.y }}
+  Box: {{boxData.id}}
 </div>
